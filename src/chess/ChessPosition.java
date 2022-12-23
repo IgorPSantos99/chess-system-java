@@ -30,7 +30,7 @@ public class ChessPosition {
 	
 	// Method to convert the chess coordinates to default coordinates
 	protected static ChessPosition fromPosition(Position position) {
-		return new ChessPosition((char)('a'- position.getColumn()), 8 - position.getRow()); // casting char
+		return new ChessPosition((char)('a'+ position.getColumn()), 8 - position.getRow()); // casting char
 				
 	}
 	@Override
